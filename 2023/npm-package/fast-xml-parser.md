@@ -6,6 +6,7 @@ The package description says *Validate XML, Parse XML to JS Object, or Build XML
 *Parse XML to JS Object* - this sounded very interesting and I knew I should test for prototype pollution as many other packages which *convert json to js objects* were found to be vulnerable in the past and it turned out yeah this package was vulnerable to it.
 
 https://www.npmjs.com/package/fast-xml-parser
+https://github.com/NaturalIntelligence/fast-xml-parser
 
 Taking an example code from the github repo to demonstrate the bug:
 
@@ -45,4 +46,9 @@ Fix commit: https://github.com/NaturalIntelligence/fast-xml-parser/commit/2b032a
 
 They are now validating, if the key contains `__proto__` and replaces it with `#__proto__`
 
-CVE is still pending .
+CVE is still pending 
+
+The package maintainer @amitguptagwl was very swift in replies and addressing the reported issue :)
+
+
+SNYK Advisory: https://security.snyk.io/vuln/SNYK-JS-FASTXMLPARSER-3325616
