@@ -6,6 +6,10 @@ The package description says *Validate XML, Parse XML to JS Object, or Build XML
 *Parse XML to JS Object* - this sounded very interesting and I knew I should test for prototype pollution as many other packages which *convert json to js objects* were found to be vulnerable in the past and it turned out yeah this package was vulnerable to it.
 
 https://www.npmjs.com/package/fast-xml-parser
+
+![image](https://user-images.githubusercontent.com/31372554/232062163-c4a4494c-429e-416b-ab41-3e3bc38aef6a.png)
+
+
 https://github.com/NaturalIntelligence/fast-xml-parser
 
 Taking an example code from the github repo to demonstrate the bug:
